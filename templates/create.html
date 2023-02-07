@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+       <title>Добавление товара</title>
+{% endblock %}
+
+
+
+{% block body %}
+<div class="container">
+    <p class="fs-5 text-muted">
+    <h1>Добавление товара</h1>
+     <h1 class="display-4 fw-normal">
+         <img style="display: block;-webkit-user-select: none;margin: auto;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;" src="https://4.bp.blogspot.com/--35JRSjfWGc/WrLIpuohg7I/AAAAAAAAAgQ/zxWThcTdLDk8fwleKbXwa7zsnXQ82yAkwCLcBGAs/w1200-h630-p-k-no-nu/1707904.jpg">
+</h1>
+    </p>
+    <form method="post">
+        <input type="text" class="w-100 py-2 mb-2 btn btn-outline-primary rounded-4" name="title" id="title" placeholder="Введите название"><br>
+        <input type="number" class="w-100 py-2 mb-2 btn btn-outline-primary rounded-4" name="price" id="price" placeholder="Введите цену"><br>
+        <input type="number" class="w-100 py-2 mb-2 btn btn-outline-primary rounded-4" name="number" id="number" placeholder="Введите колличество в наличии"><br>
+        <input type="text" class="w-100 py-2 mb-2 btn btn-outline-primary rounded-4" name="desc" id="desc" placeholder="Введите описание товара"><br>
+        <button class="btn btn-warning" type="submit">Добавить</button>
+    </form>
+</div>
+
+{% endblock %}
